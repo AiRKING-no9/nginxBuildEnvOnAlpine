@@ -1,0 +1,11 @@
+version: "3"
+
+services: 
+    server:
+        container_name: custom_alpine
+        build: 
+            context: ./app-server
+            dockerfile: Dockerfile
+        ports: 
+            - "8080:80"
+        tty: true
