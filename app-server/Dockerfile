@@ -15,6 +15,9 @@ RUN mkdir -p /etc/apk && echo "http://alpine.gliderlabs.com/alpine/edge/main" > 
     sed -i 's/cgroup_add_service /# cgroup_add_service /g' /lib/rc/sh/openrc-run.sh &&\
     mkdir /run/openrc &&\
     touch /run/openrc/softlevel &&\
+    # nginxの設定ファイルを編集
+    # ルートアクセス時にindex.htmlを表示するように変更
+    sed -i'.bak' 's/return 404;/root html;\n\t\tindex index.html;/' /etc/nginx/conf.d/default.conf &&\
     sed -i '1s/^/pid \/var\/run\/nginx.pid;\n/' /etc/nginx/nginx.conf && nginx
     
 # nginxを起動
