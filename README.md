@@ -3,8 +3,8 @@ alpineベースのlaravel動作環境を構築
 作成されるlaravelProjectディレクトリは別リポジトリで管理を想定
 
 ## HOW TO USE
-詳細はMakefileを参考
-※ makeコマンドの実行可能環境を想定
+詳細はMakefileを参考  
+※ makeコマンドの実行可能環境を想定  
 makeが実行できない場合は `brew install make` かMakefileをみて順次実行する
 
 ### 初回起動
