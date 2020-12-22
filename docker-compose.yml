@@ -1,5 +1,6 @@
 version: "3"
-
+volumes:
+  code_share:
 services: 
     server:
         container_name: custom_alpine
@@ -8,4 +9,6 @@ services:
             dockerfile: Dockerfile
         ports: 
             - "8080:80"
+        volumes: 
+            - ./:/www/
         tty: true
