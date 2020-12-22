@@ -1,5 +1,5 @@
 # nginxBuildEnvOnAlpine
-alpineベースのlaravel動作環境を構築
+alpineベースのlaravel動作環境を構築  
 作成されるlaravelProjectディレクトリは別リポジトリで管理を想定
 
 ## HOW TO USE
